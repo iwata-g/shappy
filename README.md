@@ -241,4 +241,4 @@
 
 ## 11. 画面遷移図
 
-- **FigmaのURL**：https://www.figma.com/design/AR8P3st2Hqtgfhlc1FHHKm/%E7%84%A1%E9%A1%8C?node-id=3-5&t=CswZYdsEmsuYeQuw-1
+- **FigmaのURL**：https://gyazo.com/1c1fb3f4592a543f28e8237140b11766
