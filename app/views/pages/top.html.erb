@@ -1,0 +1,79 @@
+<div class="max-w-md mx-auto px-5 pt-10 pb-16">
+  <!-- ロゴ・キャッチコピー -->
+  <header class="text-center mb-10">
+    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-100 text-3xl mb-4 shadow-sm">
+      🍀
+    </div>
+    <h1 class="text-3xl font-extrabold tracking-tight text-stone-900 mb-2">
+      shappy
+    </h1>
+    <p class="text-sm font-medium text-amber-700 bg-amber-100/70 inline-block px-3 py-1 rounded-full">
+      気遣いゼロの動画アルバム
+    </p>
+  </header>
+
+  <!-- ヒーローセクション（コア価値 ＆ メインCTA） -->
+  <section class="bg-white rounded-3xl p-6 shadow-sm border border-amber-100 text-center mb-8">
+    <h2 class="text-xl font-bold leading-relaxed text-stone-800 mb-3">
+      憂鬱な夜に、<br>
+      大切な人の優しさで笑顔に。
+    </h2>
+    <p class="text-sm text-stone-600 leading-relaxed mb-7">
+      ログインもパスワードも不要。<br>
+      お気に入りのYouTube動画を感情タグでストックして、<br>
+      秘密のURLで大切な人と共有しよう。
+    </p>
+
+    <!-- 秘密の部屋をつくるボタン（次週RoomsController実装時にPOST先を接続） -->
+    <%= link_to "#",
+          class: "block w-full py-4 px-6 rounded-2xl bg-amber-400 hover:bg-amber-500 active:scale-[0.98] text-stone-900 font-bold text-lg shadow-md transition duration-150" do %>
+      ✨ 秘密の部屋をつくる
+    <% end %>
+    <p class="text-xs text-stone-400 mt-3">
+      ※ 登録なし・無料ですぐに始められます
+    </p>
+  </section>
+
+  <!-- 3つの特徴（サービス概要） -->
+  <section class="space-y-4">
+    <h3 class="text-center text-sm font-bold text-stone-500 tracking-wider">
+      shappy の 3つの特徴
+    </h3>
+
+    <div class="bg-white/80 rounded-2xl p-5 border border-stone-100 flex items-start gap-4">
+      <span class="text-2xl shrink-0">🤫</span>
+      <div>
+        <h4 class="font-bold text-stone-800 text-sm mb-1">
+          気遣いゼロのクローズド空間
+        </h4>
+        <p class="text-xs text-stone-600 leading-relaxed">
+          コメント欄も既読もありません。URLを貼るだけなので、相手の反応を気にせず気楽にストックできます。
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-white/80 rounded-2xl p-5 border border-stone-100 flex items-start gap-4">
+      <span class="text-2xl shrink-0">🏷️</span>
+      <div>
+        <h4 class="font-bold text-stone-800 text-sm mb-1">
+          3つの感情タグで自動整理
+        </h4>
+        <p class="text-xs text-stone-600 leading-relaxed">
+          「爆笑」「癒やし」「感動」を選ぶだけ。見たい気分のときにワンタップで動画を浴びるように楽しめます。
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-white/80 rounded-2xl p-5 border border-stone-100 flex items-start gap-4">
+      <span class="text-2xl shrink-0">🔑</span>
+      <div>
+        <h4 class="font-bold text-stone-800 text-sm mb-1">
+          URLを共有するだけの簡単操作
+        </h4>
+        <p class="text-xs text-stone-600 leading-relaxed">
+          面倒な会員登録は一切なし。発行された秘密のURLをLINEで送るだけで、家族や友人とすぐ使えます。
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
