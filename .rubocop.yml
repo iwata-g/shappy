@@ -1,0 +1,45 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3
+  Exclude:
+    - "bin/**/*"
+    - "db/**/*"
+    - "config/**/*"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+    - "tmp/**/*"
+    - "log/**/*"
+    - "storage/**/*"
+    - "Gemfile"
+    - "Rakefile"
+    - "config.ru"
+
+# 日本語コメントを許可する
+Style/AsciiComments:
+  Enabled: false
+
+# クラス・モジュールのトップレベルコメント強制をオフにする
+Style/Documentation:
+  Enabled: false
+
+# frozen_string_literal: true の強制をオフにする
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# 1行の最大文字数を120文字まで緩和する
+Layout/LineLength:
+  Max: 120
+
+# メソッドの行数を20行まで緩和する
+Metrics/MethodLength:
+  Max: 20
+
+# ブロックの行数制限
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "config/routes.rb"
